@@ -50,7 +50,7 @@ GRADE_SCHEMA = {
     'dau_tu': {'trich': 'đoạn tâm sự công sức nguyên văn, rỗng nếu không có', 'con_so': '', 'bo_su': ['tên đúng như trong trích'],
                'phat_hien': '', 'trung_tuyen_B': False, 'nhac_lai': 'câu nhắc lại nguyên văn gần cuối, hoặc rỗng'},
     'tieu_chi': {k: {'diem': 0, 'bang_chung': [{'hoi': 1, 'trich': 'nguyên văn'}], 'ly_do': '', 'cach_sua': ''}
-                 for k in ['T1', 'T2', 'T3', 'H1', 'H2', 'H3', 'H4', 'H5']},
+                 for k in ['T1', 'T2', 'T3', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6']},
     'su_that': [{'trich': 'nguyên văn', 'ghi_chu': 'nghi sai ở đâu'}],
 }
 
@@ -65,7 +65,8 @@ def outline(cfg, transcript):
         '- Chọn hai tuyến A và B ĐỐI LỰC từ chính nội dung transcript (tuyến B là lực kéo ngược hoặc câu chuyện song song ít ai biết, có diễn biến riêng). Nếu transcript kể một mạch, hãy tách những sự kiện/giai thoại thuộc phía đối lực ra thành tuyến B và phân bố lại theo thời gian.\n'
         '- 5 đến 8 hồi. HỒI NÀO CŨNG có bước tuyến A và bước tuyến B; ngoại truyện của tuyến B rải ở ít nhất một nửa số hồi; không hồi nào chỉ dành cho giai thoại.\n'
         '- Hồi 1 chứa mở đầu: câu đầu khớp tiêu đề, giới thiệu cả hai tuyến, lời tâm sự công sức (con số cường điệu được, ≥ 2 bộ sử có thật, phát hiện = tuyến B), lời chào kênh một lần.\n'
-        '- Hồi cuối: hé lộ lớn của tuyến B, hai tuyến hội tụ, kết ở cao trào.',
+        '- Hồi cuối: hé lộ lớn của tuyến B, hai tuyến hội tụ, kết ở cao trào.\n'
+        '- Ghi rõ 2–3 chỗ đặt lời kêu gọi tương tác (sau mở đầu, giữa video ở chỗ chuyển tuyến, cuối video) trong "nhip_chuyen" của hồi tương ứng.',
         'Chỉ trả về MỘT khối JSON đúng mẫu sau (giữ nguyên tên trường):\n```json\n%s\n```' % json.dumps(OUTLINE_SCHEMA, ensure_ascii=False, indent=1),
         '# TRANSCRIPT VIDEO GỐC\n\n' + transcript,
     ] if x)
@@ -81,6 +82,7 @@ def write(cfg, transcript, plan):
         'Cách trình bày:\n'
         '- Mỗi hồi mở bằng dòng `## Hồi N — tên hồi`, theo đúng thứ tự dàn ý.\n'
         '- Trong mỗi hồi, kể xen kẽ tuyến A và tuyến B theo "nhịp chuyển"; mỗi lần đổi tuyến có câu bắc cầu và cho người xem biết tuyến đó đang tới đâu.\n'
+        '- Lời kêu gọi like/theo dõi/bình luận ở 2–3 chỗ như H6, mỗi chỗ một cách nói riêng, không chép nguyên câu ví dụ.\n'
         '- Không ghi nhãn A/B, không ghi chú biên tập, không gạch đầu dòng. Chỉ trả về kịch bản, không lời giải thích.',
         '# TRANSCRIPT VIDEO GỐC (tư liệu)\n\n' + transcript,
     ] if x)
@@ -124,7 +126,7 @@ def grade(numbered_script):
         '`mo_dau` là 8–15 chữ đầu tiên của đoạn, CHÉP NGUYÊN VĂN từ kịch bản (máy sẽ dò, sai một chữ là mất). Lời chào, lời kêu gọi theo dõi là `chung`.\n'
         '3. Liệt kê ngoại truyện/giai thoại (`ngoai_truyen`), và chỉ khi có phần/danh sách riêng gom giai thoại thì liệt kê ở `phan_rieng_giai_thoai`.\n'
         '4. Tìm lời tâm sự công sức (`dau_tu`); bằng chứng phải nguyên văn. `trung_tuyen_B` = true chỉ khi phát hiện trong lời tâm sự đúng là tuyến B.\n'
-        '5. Chấm 8 tiêu chí: mỗi tiêu chí có điểm 0–10, bằng chứng trích nguyên văn kèm số hồi, lý do ngắn, cách sửa cụ thể nếu dưới ngưỡng.\n'
+        '5. Chấm 9 tiêu chí: mỗi tiêu chí có điểm 0–10, bằng chứng trích nguyên văn kèm số hồi, lý do ngắn, cách sửa cụ thể nếu dưới ngưỡng.\n'
         '6. Ghi chú sự thật nếu nghi sai (không trừ điểm).',
         'Chỉ trả về MỘT khối JSON đúng mẫu sau:\n```json\n%s\n```' % json.dumps(GRADE_SCHEMA, ensure_ascii=False, indent=1),
         '# KỊCH BẢN CẦN CHẤM\n\n' + numbered_script,

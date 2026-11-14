@@ -7,7 +7,7 @@ import re
 from .script import Script, norm
 
 CORE = ['T1', 'T2', 'T3']
-SUPPORT = ['H1', 'H2', 'H3', 'H4', 'H5']
+SUPPORT = ['H1', 'H2', 'H3', 'H4', 'H5', 'H6']
 ALL = CORE + SUPPORT
 NAMES = {
     'T1': 'Tương phản — hai tuyến đối lực đan xen',
@@ -18,6 +18,7 @@ NAMES = {
     'H3': 'Nhịp độ',
     'H4': 'Hé lộ lớn và kết ở cao trào',
     'H5': 'Giọng kênh',
+    'H6': 'Kêu gọi tương tác',
 }
 PASS_CORE, PASS_SUPPORT = 8, 7
 OPENING_WORDS = 350          # ≈ 2 phút
@@ -27,6 +28,9 @@ MAX_RUN = 900                # ≈ 5,5 phút liền một tuyến
 EDITOR_NOTES = re.compile(r'cần kiểm tra|cần đối chiếu|tư liệu được cung cấp|tư liệu đầu vào|theo tư liệu bạn|tư liệu đang kể|'
                           r'bản tư liệu|transcript|video gốc|ghi chú biên tập', re.I)
 GREETING = re.compile(r'chào mừng', re.I)
+# a call to like / follow / comment (checked on normalized text)
+CTA = re.compile(r'(?:^| )(?:like|subscribe|đăng ký kênh|lượt đăng ký|lượt theo dõi|theo dõi kênh|bấm theo dõi|nhấn theo dõi|'
+                 r'để lại bình luận|phần bình luận|bình luận bên dưới|bình luận cho em)(?: |$)')
 # an effort figure: a number followed by a unit of time or reading ("1000 giờ", "ba tháng", "hàng trăm trang")
 NUMBER = re.compile(r'(?:^| )(?:\d+|một|hai|ba|bốn|năm|sáu|bảy|tám|chín|mười|mươi|trăm|nghìn|ngàn|vạn|triệu|chục)'
                     r' (?:giờ|tiếng|ngày|đêm|tuần|tháng|năm|trang|cuốn|quyển|tập)(?: |$)')
@@ -185,6 +189,11 @@ def evaluate(script_text, reply):
     greet = len(GREETING.findall(body))
     if greet > 1:
         cap('H2', 4, 'Lời chào kênh xuất hiện %d lần' % greet)
+    cta_acts = sorted({s.act_of(s._tok_at(m.start() + (m.group(0)[0] == ' '))) for m in CTA.finditer(body)})
+    if not cta_acts:
+        cap('H6', 3, 'Không có lời kêu gọi like / theo dõi / bình luận')
+    elif len(cta_acts) < 2:
+        cap('H6', 5, 'Lời kêu gọi chỉ ở hồi %d' % cta_acts[0])
 
     # --- criteria from the grader, evidence checked -------------------------------------------------
     crit = g.get('tieu_chi') or {}
@@ -219,7 +228,7 @@ def evaluate(script_text, reply):
         'tuyen': {'A': g.get('tuyen_A', ''), 'B': g.get('tuyen_B', ''), 'doi_luc': g.get('doi_luc', '')},
         'do_dac': {'so_chu': s.n, 'so_hoi': n_acts, 'ty_le_B': round(b_share, 3),
                    'B_bat_dau_o_chu': first_b, 'doan_lien_dai_nhat': longest and {'tuyen': longest['tuyen'], 'chu': longest['len']},
-                   'so_lan_chuyen_tuyen': switches, 'hoi_co_ngoai_truyen': sorted(nt_acts), 'so_loi_chao': greet},
+                   'so_lan_chuyen_tuyen': switches, 'hoi_co_ngoai_truyen': sorted(nt_acts), 'so_loi_chao': greet, 'hoi_co_keu_goi': cta_acts},
         'hoi': acts,
         'doan': [{k: x[k] for k in ('tuyen', 'start', 'len', 'mo_dau')} for x in segs],
         'dau_tu': dt,
@@ -260,7 +269,8 @@ def render(card, title=''):
             '- Đoạn B đầu tiên ở chữ: %s' % (m['B_bat_dau_o_chu'] if m['B_bat_dau_o_chu'] is not None else 'không có'),
             '- Đoạn kể liền một tuyến dài nhất: %s' % ('%s, %d chữ' % (m['doan_lien_dai_nhat']['tuyen'], m['doan_lien_dai_nhat']['chu']) if m['doan_lien_dai_nhat'] else '—'),
             '- Số lần chuyển tuyến A↔B: %d' % m['so_lan_chuyen_tuyen'],
-            '- Lời chào kênh: %d lần' % m['so_loi_chao'], '',
+            '- Lời chào kênh: %d lần' % m['so_loi_chao'],
+            '- Lời kêu gọi tương tác ở hồi: %s' % (', '.join(map(str, m['hoi_co_keu_goi'])) or 'không có'), '',
             '| Hồi | Tên | Chữ | Chữ tuyến A | Chữ tuyến B | Ngoại truyện trong B |', '|---|---|---|---|---|---|']
     for h in card['hoi']:
         out.append('| %d | %s | %d | %d | %d | %s |' % (h['hoi'], h['ten'] or '', h['chu'], h['A'], h['B'], 'có' if h['ngoai_truyen'] else '—'))

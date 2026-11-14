@@ -19,6 +19,8 @@ def good_script(acts=4, filler=20):
     for i in range(1, acts + 1):
         a = 'Tuyến chính hồi %d Trần Thủ Độ tiến thêm một bước. %s' % (i, pad)
         b = 'Phía triều đình hồi %d lại phản đòn ông. Giai thoại hồi %d kể rằng người lính dám ngăn kiệu. %s' % (i, i, pad)
+        if i in (1, acts):
+            b += ' Các bác cho em xin một like, một lượt theo dõi kênh nha.'
         body = EFFORT + '\n\n' + b + '\n\n' + a if i == 1 else a + '\n\n' + b   # act 1: line B right after the effort talk
         out.append('## Hồi %d — Phần %d\n\n%s' % (i, i, body))
     return '\n\n'.join(out)
@@ -138,6 +140,13 @@ class GradeTest(unittest.TestCase):
         for note in ('Bản transcript còn kể rằng', 'Theo tư liệu đang kể, ông', 'cần đối chiếu lại cách ghi'):
             s = good_script().replace('Phần 2\n\n', 'Phần 2\n\n%s.\n\n' % note)
             self.assertTrue(G.evaluate(s, good_reply())['loi_chan'], note)
+
+    def test_calls_to_action(self):
+        self.assertEqual(G.evaluate(good_script(), good_reply())['do_dac']['hoi_co_keu_goi'], [1, 4])
+        one = good_script().replace(' Các bác cho em xin một like, một lượt theo dõi kênh nha.', '', 1)
+        self.assertEqual(G.evaluate(one, good_reply())['tieu_chi']['H6']['diem'], 5)
+        none = good_script().replace(' Các bác cho em xin một like, một lượt theo dõi kênh nha.', '')
+        self.assertEqual(G.evaluate(none, good_reply())['tieu_chi']['H6']['diem'], 3)
 
     def test_segments_not_found_is_grader_error(self):
         r = good_reply()

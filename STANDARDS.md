@@ -130,12 +130,22 @@ Cứ khoảng 2–4 phút có một điểm chuyển nhịp (đổi tuyến, đ�
 Giới hạn: có đoạn bình luận liền quá ≈ 500 chữ → tối đa 5.
 
 ### H4. Hé lộ lớn và kết ở cao trào
-Gần cuối hé lộ phần thưởng lớn (thuộc tuyến B, xem T2), hai tuyến hội tụ, rồi kết ngay ở cao trào (kịch tính, ấm áp hoặc hài hước). Lời kêu gọi theo dõi ngắn, chỉ ở cuối. **Trích:** câu hé lộ và câu kết.
+Gần cuối hé lộ phần thưởng lớn (thuộc tuyến B, xem T2), hai tuyến hội tụ, rồi kết ngay ở cao trào (kịch tính, ấm áp hoặc hài hước). Lời kêu gọi cuối video đặt sau cao trào, không chen trước hé lộ (xem H6). **Trích:** câu hé lộ và câu kết.
 Giới hạn: kết bằng tóm tắt/bài học chung chung → tối đa 5; sau cao trào còn kéo dài quá ≈ 150 chữ trước lời kêu gọi → tối đa 6.
 
 ### H5. Giọng kênh
 Người dẫn xưng "em", gọi khán giả là "các bác"; giọng tán gẫu như kể chuyện ở quán nước; thành ngữ, so sánh dân dã, câu hỏi tu từ vừa phải (không cuối mọi đoạn); mỗi câu cửa miệng dùng tối đa hai lần. Viết thành đoạn văn để đọc, không gạch đầu dòng; chỗ chèn hình ghi `[HÌNH: …]`. **Trích:** 2–3 câu tiêu biểu.
 Giới hạn: xưng hô sai ("tôi", "các bạn") → tối đa 5; câu cửa miệng lặp quá 3 lần → tối đa 6.
+
+### H6. Kêu gọi tương tác
+Người dẫn xin like, theo dõi, bình luận **ở 2–3 chỗ**, mỗi chỗ **một cách nói khác nhau**, giọng "em" tự nhiên như nhờ người quen:
+
+1. **Sau mở đầu** (trong khoảng 2 phút đầu), dành cho người mới — ví dụ: "Nếu các bác lần đầu đến kênh của em, hãy cho em xin một like, một lượt theo dõi để ủng hộ kênh em nha."
+2. **Giữa video**, ở chỗ chuyển tuyến hoặc vừa xong một đỉnh, không cắt ngang lúc gay cấn — ví dụ: "Kênh của em thường xuyên làm về những nhân vật như thế này; nếu các bác đã xem đến đây, cho em xin một lượt theo dõi để không bỏ sót những video tiếp theo nhé."
+3. **Cuối video**, sau cao trào: xin theo dõi và mời các bác để lại bình luận, tốt nhất là một câu hỏi gắn với tuyến B (vd. "nếu là các bác, các bác chọn phe nào?").
+
+Các câu chỉ là ví dụ, mỗi kịch bản phải tự viết cách nói riêng, đa dạng. **Trích:** từng lời kêu gọi kèm hồi.
+Giới hạn: không có lời kêu gọi nào → tối đa 3; chỉ có một chỗ → tối đa 5; các lời kêu gọi gần như lặp lại một câu → tối đa 6; chen ngang đoạn gay cấn hoặc đứng trước hé lộ lớn → tối đa 6; quá 4 chỗ hoặc kéo dài như quảng cáo → tối đa 6.
 
 ---
 
@@ -147,7 +157,7 @@ Người chấm liệt kê những chỗ nghi sai (tên, năm, quan hệ), mỗi
 Kịch bản được duyệt khi **đồng thời**:
 
 1. T1, T2, T3 đều **≥ 8** (sau khi áp giới hạn).
-2. H1–H5 đều **≥ 7**.
+2. H1–H6 đều **≥ 7**.
 3. Máy kiểm tra không báo lỗi chặn (bên dưới).
 
 ## Phần máy kiểm tra (không dựa vào lời người chấm)
@@ -170,3 +180,5 @@ Người chấm phải chia kịch bản thành các **đoạn tuyến** theo th
 | Người chấm xác nhận phát hiện không trùng tuyến B | T3 ≤ 4 |
 | Ghi chú biên tập trong lời đọc ("CẦN KIỂM TRA", "tư liệu được cung cấp", "tư liệu đầu vào") | lỗi chặn |
 | Lời chào kênh xuất hiện hơn một lần | H2 ≤ 4 |
+| Không có lời kêu gọi nào (like / theo dõi / đăng ký / bình luận) | H6 ≤ 3 |
+| Lời kêu gọi chỉ ở một hồi | H6 ≤ 5 |

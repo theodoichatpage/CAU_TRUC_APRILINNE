@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+# repo công khai: không đẩy bản sao kịch bản/transcript đầy đủ, chỉ đẩy bảng điểm và trả lời của người chấm
+runs/*/nguon.txt
+runs/*/buoc/*.prompt.md
+runs/*/vong*/kich_ban*.md
+runs/*/vong*/ban_nhap.md

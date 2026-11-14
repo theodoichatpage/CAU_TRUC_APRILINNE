@@ -1,0 +1,625 @@
+{
+ "duyet": false,
+ "loi_chan": [
+  "Ghi chú biên tập lọt vào lời đọc: Bản tư liệu, bản tư liệu, cần kiểm tra, cần đối chiếu, transcript, tư liệu đang kể"
+ ],
+ "tieu_chi": {
+  "T1": {
+   "ma": "T1",
+   "ten": "Tương phản — hai tuyến đối lực đan xen",
+   "diem_cham": 3.0,
+   "gioi_han": 3,
+   "vi_sao_gioi_han": [
+    "Không có tuyến B có diễn biến riêng",
+    "Hồi không có tuyến B: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24",
+    "Có đoạn kể liền tuyến A dài 9708 chữ (≈ 60.7 phút, tối đa 900 chữ)"
+   ],
+   "diem": 3.0,
+   "dat": false,
+   "can": 8,
+   "bang_chung": [
+    {
+     "hoi": 1,
+     "trich": "Một bên là bàn tay sắt với hoàng tộc, một bên lại có những hành động giữ phép nước."
+    },
+    {
+     "hoi": 2,
+     "trich": "Cuối thế kỷ XII, nhà Lý sau hơn hai trăm năm trị vì, từng đánh Tống, bình Chiêm, giờ bắt đầu rệu rã."
+    },
+    {
+     "hoi": 23,
+     "trich": "Một bên là cơ đồ, một bên là những con người phải trả giá cho cơ đồ ấy."
+    }
+   ],
+   "ly_do": "Không có tuyến B có diễn biến riêng. Kịch bản kể một mạch theo thời gian từ suy vong nhà Lý đến khi Trần Thủ Độ mất; 'tương phản' chỉ là nhận định hai mặt (gian thần/công thần, bàn tay sắt/giữ phép nước) - đúng ví dụ không đạt trong tiêu chuẩn. Không có mốc tiến độ của tuyến đối lực, không có hội tụ hai mạch. Máy đo: không hồi nào có đoạn B, B = 0%.",
+   "cach_sua": "Dựng tuyến B có diễn biến riêng đối lực Trần Thủ Độ (vd. phe Thái hậu họ Đàm và cựu thần nhà Lý, rồi Trần Liễu, rồi quân Mông Cổ - mỗi lần phản đòn suýt lật ông), giới thiệu cả hai tuyến trong 350 chữ đầu, cắt xen A/B trong từng hồi, mỗi lần quay lại B báo rõ phe kia đang ở đâu, và cho hai tuyến hội tụ ở cuối để giải thích vì sao kết cục là nhà Trần."
+  },
+  "T2": {
+   "ma": "T2",
+   "ten": "Phần thưởng — ngoại truyện trong tuyến song song",
+   "diem_cham": 2.0,
+   "gioi_han": 3,
+   "vi_sao_gioi_han": [
+    "Giai thoại gom thành phần/danh sách riêng: \"Thế nhưng, sử cũ còn ghi lại ba câu chuyện khó tin: Trần Thủ Độ thưởng người lính dám ngăn kiệu vợ mình, răn đe người họ\"",
+    "Không có tuyến B để chứa ngoại truyện",
+    "Hồi không có tuyến B: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24",
+    "Ngoại truyện nằm trong tuyến B chỉ trích được ở 0/24 hồi (cần ≥ một nửa)"
+   ],
+   "diem": 2.0,
+   "dat": false,
+   "can": 8,
+   "bang_chung": [
+    {
+     "hoi": 1,
+     "trich": "Thế nhưng, sử cũ còn ghi lại ba câu chuyện khó tin: Trần Thủ Độ thưởng người lính dám ngăn kiệu vợ mình, răn đe người họ hàng xin chức và thưởng cả viên quan dám tố cáo ông."
+    },
+    {
+     "hoi": 1,
+     "trich": "Em sẽ cùng các bác lần theo từng biến cố, đặt công lao và bi kịch lên cùng một bàn cân."
+    },
+    {
+     "hoi": 22,
+     "trich": "Đến đây, chúng ta có ba câu chuyện đáng suy ngẫm."
+    }
+   ],
+   "ly_do": "Lời hứa ở mở đầu là trừu tượng ('đặt công lao và bi kịch lên cùng một bàn cân') - tối đa 2. Ba giai thoại được liệt kê ngay mở đầu rồi kể dồn thành một khối riêng ở Hồi 20-22 (kèm câu dẫn 'Ba câu chuyện tiếp theo...') - đúng ví dụ không đạt, tối đa 3. Không có tuyến B nên ngoại truyện không nằm trong tuyến B; không có hé lộ lớn gần cuối.",
+   "cach_sua": "Bỏ danh sách 'ba câu chuyện khó tin' ở mở đầu và khối Hồi 20-22; rải từng giai thoại (ngăn kiệu, ngón chân, viên quan tố cáo, nhổ cỏ, 'chó săn') vào đúng thời điểm của nó trong tuyến B; mở đầu hứa cụ thể một điều sẽ được hé lộ từ tuyến B và để giai thoại lớn nhất làm hé lộ khi hai tuyến hội tụ."
+  },
+  "T3": {
+   "ma": "T3",
+   "ten": "Mức đầu tư — tâm sự công sức dẫn vào tuyến ngoại truyện",
+   "diem_cham": 2.0,
+   "gioi_han": 2,
+   "vi_sao_gioi_han": [
+    "Không trích được lời tâm sự công sức"
+   ],
+   "diem": 2.0,
+   "dat": false,
+   "can": 8,
+   "bang_chung": [
+    {
+     "hoi": 19,
+     "trich": "Điều khiến em phải đọc kỹ lại Đại Việt sử ký toàn thư là một nghịch lý."
+    },
+    {
+     "hoi": 2,
+     "trich": "Muốn tìm cho rõ, chúng ta phải đối chiếu Đại Việt sử ký toàn thư với Việt sử lược, chứ không thể đoán mò."
+    }
+   ],
+   "ly_do": "Không có lời tâm sự công sức trong 2 phút đầu: không con số công sức, không phát hiện 'sách giáo khoa không kể'. Tên sử chỉ rải như dẫn nguồn (Hồi 2, Hồi 19), không phải lời tâm sự. Ngoài ra lời đọc lọt rất nhiều ghi chú biên tập ('Theo tư liệu đang kể', 'Bản transcript còn kể', 'bản tư liệu', 'cần đối chiếu') - lỗi chặn.",
+   "cach_sua": "Thêm trong 350 chữ đầu một đoạn 'em' tâm sự: con số công sức (vd. 'hơn 1000 giờ'), gọi tên ít nhất hai bộ (Đại Việt sử ký toàn thư, Việt sử lược, Khâm định Việt sử...), và phát hiện chính là tuyến B; gần cuối nhắc lại 'chính trong bộ ... em mới thấy...'. Xóa toàn bộ ghi chú biên tập và câu 'cần đối chiếu' khỏi lời đọc."
+  },
+  "H1": {
+   "ma": "H1",
+   "ten": "Mở đầu 20 giây",
+   "diem_cham": 6.0,
+   "gioi_han": null,
+   "vi_sao_gioi_han": [],
+   "diem": 6.0,
+   "dat": false,
+   "can": 7,
+   "bang_chung": [
+    {
+     "hoi": 1,
+     "trich": "Một người góp phần chấm dứt hơn hai trăm năm cơ nghiệp nhà Lý, đưa dòng họ mình lên ngai vàng, vậy mà cũng chính người ấy lại góp công dựng nên vương triều đánh bại cuộc xâm lược Mông Cổ đầu tiên."
+    },
+    {
+     "hoi": 1,
+     "trich": "Các bác bảo, Trần Thủ Độ là gian thần cướp ngôi hay công thần cứu nước?"
+    }
+   ],
+   "ly_do": "Câu đầu có bối cảnh và cái giá, có câu hỏi tò mò, nhưng khoảng trống tò mò là câu hỏi đánh giá đạo đức chung chung, không có bí mật cụ thể; sau đó lại lùi về giảng bối cảnh nhà Lý suy yếu, làm loãng 20 giây đầu.",
+   "cach_sua": "Câu đầu nêu tên Trần Thủ Độ kèm một chi tiết sốc cụ thể; trong 55 chữ đầu gài một câu hỏi về tuyến B (ai suýt lật được ông, và vì sao không thành)."
+  },
+  "H2": {
+   "ma": "H2",
+   "ten": "Vào chuyện sớm, liền mạch",
+   "diem_cham": 3.0,
+   "gioi_han": 4,
+   "vi_sao_gioi_han": [
+    "Ghi chú biên tập lọt vào lời đọc"
+   ],
+   "diem": 3.0,
+   "dat": false,
+   "can": 7,
+   "bang_chung": [
+    {
+     "hoi": 1,
+     "trich": "Chào mừng quý bạn và các vị đến với Bản tin 247!"
+    },
+    {
+     "hoi": 2,
+     "trich": "Theo tư liệu đang kể, ông sinh năm 1194, sớm mồ côi và được Trần Lý nuôi dưỡng."
+    },
+    {
+     "hoi": 3,
+     "trich": "Bản transcript còn kể ông tuyên bố sẽ dốc gia sản, chiêu mộ binh lính, thưởng người lập công và trừng phạt kẻ trái lệnh."
+    },
+    {
+     "hoi": 2,
+     "trich": "Nói nôm na, nhà thì dột từ nóc, bên dưới lại mạnh ai nấy lo."
+    },
+    {
+     "hoi": 22,
+     "trich": "Người lính ngăn kiệu phu nhân thì được thưởng. Người họ hàng nhờ xin chức thì bị răn đe. Viên quan dám phê phán Thái sư cũng được thưởng."
+    }
+   ],
+   "ly_do": "Chào kênh một lần nhưng muộn và sai xưng hô. Ghi chú biên tập lọt vào lời đọc ('Theo tư liệu đang kể', 'Bản transcript còn kể', câu cụt 'đều.', 'vẫn.') - tối đa 4. Có kể lại: bối cảnh nhà Lý suy yếu/'nhà dột từ nóc' kể ở Hồi 1 rồi lặp ở Hồi 2; ba giai thoại nêu ở Hồi 1, kể ở Hồi 20-22 rồi tóm tắt lại ở Hồi 22. Gần như hồi nào cũng mở bằng 'Các bác ạ'.",
+   "cach_sua": "Xóa mọi ghi chú biên tập và câu cụt; bỏ đoạn bối cảnh trùng ở Hồi 1 hoặc Hồi 2; bỏ đoạn tóm tắt ba câu chuyện; đổi cách mở hồi, không lặp 'Các bác ạ'."
+  },
+  "H3": {
+   "ma": "H3",
+   "ten": "Nhịp độ",
+   "diem_cham": 5.0,
+   "gioi_han": null,
+   "vi_sao_gioi_han": [],
+   "diem": 5.0,
+   "dat": false,
+   "can": 7,
+   "bang_chung": [
+    {
+     "hoi": 23,
+     "trich": "Theo em, lịch sử không phải cái bảng thành tích, cứ thắng trận là mọi chuyện trước đó được xóa sạch."
+    },
+    {
+     "hoi": 4,
+     "trich": "Em nghĩ các bác cần để ý một câu hỏi. Khi vương triều suy yếu, lòng trung thành phải dành cho ai?"
+    }
+   ],
+   "ly_do": "Có biến cố đều đặn theo từng hồi, nhưng các đoạn bình luận/đạo đức và câu rào 'cần đối chiếu' chen khắp nơi làm chùng mạch; Hồi 22 cuối đến Hồi 23 là một khối bình luận đánh giá công tội kéo dài xấp xỉ 500 chữ không có biến cố.",
+   "cach_sua": "Cắt các đoạn bình luận đạo đức và câu rào nguồn; thay bằng chuyển tuyến sang B mỗi 2-4 phút."
+  },
+  "H4": {
+   "ma": "H4",
+   "ten": "Hé lộ lớn và kết ở cao trào",
+   "diem_cham": 4.0,
+   "gioi_han": null,
+   "vi_sao_gioi_han": [],
+   "diem": 4.0,
+   "dat": false,
+   "can": 7,
+   "bang_chung": [
+    {
+     "hoi": 23,
+     "trich": "Công ra công, tội ra tội."
+    },
+    {
+     "hoi": 24,
+     "trich": "Theo các bác, Trần Thủ Độ là gian thần hay công thần? Vì sao?"
+    }
+   ],
+   "ly_do": "Không có hé lộ lớn gần cuối (giai thoại đã bị tiêu ở Hồi 20-22 và báo trước từ Hồi 1); không có hai tuyến hội tụ; kết bằng bài học chung chung và câu hỏi tranh luận - tối đa 5. Sau cao trào chiến thắng Mông Cổ còn kéo dài nhiều hồi.",
+   "cach_sua": "Để một mảnh ngoại truyện lớn nhất của tuyến B làm hé lộ ngay trước kết, cho A và B hội tụ, rồi dừng ở cao trào với lời kêu gọi ngắn."
+  },
+  "H5": {
+   "ma": "H5",
+   "ten": "Giọng kênh",
+   "diem_cham": 5.0,
+   "gioi_han": null,
+   "vi_sao_gioi_han": [],
+   "diem": 5.0,
+   "dat": false,
+   "can": 7,
+   "bang_chung": [
+    {
+     "hoi": 1,
+     "trich": "Chào mừng quý bạn và các vị đến với Bản tin 247!"
+    },
+    {
+     "hoi": 18,
+     "trich": "Công lao tập thể mà gom hết vào một người thì khác nào cả làng cùng kéo lưới, đến lúc có cá lại chỉ khen mỗi ông đứng trên bờ!"
+    },
+    {
+     "hoi": 17,
+     "trich": "Chiến trường đâu phải nơi cứ hô quyết tâm Level Max là đối phương tự động quay xe!"
+    }
+   ],
+   "ly_do": "Xưng 'em'/'các bác' và có so sánh dân dã tốt, nhưng lời chào gọi 'quý bạn và các vị' sai xưng hô (tối đa 5); câu cửa miệng 'Các bác ạ', 'Nói theo cách của em', 'Các bác thấy nghịch lý chưa?' lặp quá 3 lần; câu hỏi tu từ cuối gần như mọi đoạn.",
+   "cach_sua": "Sửa lời chào thành gọi 'các bác'; mỗi câu cửa miệng dùng tối đa hai lần; giảm câu hỏi tu từ cuối đoạn."
+  }
+ },
+ "tuyen": {
+  "A": "Hành trình Trần Thủ Độ đưa họ Trần lên ngôi, củng cố vương triều và giữ nước trước quân Mông Cổ, kể một mạch theo thời gian.",
+  "B": "",
+  "doi_luc": ""
+ },
+ "do_dac": {
+  "so_chu": 9926,
+  "so_hoi": 24,
+  "ty_le_B": 0.0,
+  "B_bat_dau_o_chu": null,
+  "doan_lien_dai_nhat": {
+   "tuyen": "A",
+   "chu": 9708
+  },
+  "so_lan_chuyen_tuyen": 0,
+  "hoi_co_ngoai_truyen": [],
+  "so_loi_chao": 1
+ },
+ "hoi": [
+  {
+   "hoi": 1,
+   "ten": "Hồi 1 — Gian thần hay công thần?",
+   "chu": 335,
+   "A": 323,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 2,
+   "ten": "Hồi 2 — Nhà Lý suy tàn, họ Trần nổi lên",
+   "chu": 367,
+   "A": 367,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 3,
+   "ten": "Hồi 3 — Biến cố Quách Bốc",
+   "chu": 499,
+   "A": 499,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 4,
+   "ten": "Hồi 4 — Họ Trần kiểm soát triều đình",
+   "chu": 747,
+   "A": 747,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 5,
+   "ten": "Hồi 5 — Trần Thủ Độ nắm cấm quân",
+   "chu": 518,
+   "A": 518,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 6,
+   "ten": "Hồi 6 — Lý Chiêu Hoàng lên ngôi",
+   "chu": 336,
+   "A": 336,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 7,
+   "ten": "Hồi 7 — Hai đứa trẻ trong hoàng cung",
+   "chu": 389,
+   "A": 389,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 8,
+   "ten": "Hồi 8 — Hôn lễ và cuộc đổi ngôi",
+   "chu": 532,
+   "A": 532,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 9,
+   "ten": "Hồi 9 — Bi kịch Lý Huệ Tông",
+   "chu": 461,
+   "A": 461,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 10,
+   "ten": "Hồi 10 — Trần Thủ Độ cưới Trần Thị Dung",
+   "chu": 280,
+   "A": 280,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 11,
+   "ten": "Hồi 11 — Đối phó các thế lực cát cứ",
+   "chu": 449,
+   "A": 449,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 12,
+   "ten": "Hồi 12 — Khủng hoảng kế vị năm 1237",
+   "chu": 497,
+   "A": 497,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 13,
+   "ten": "Hồi 13 — Nhà vua lên Yên Tử",
+   "chu": 439,
+   "A": 439,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 14,
+   "ten": "Hồi 14 — Trần Liễu xin hàng",
+   "chu": 374,
+   "A": 374,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 15,
+   "ten": "Hồi 15 — Vó ngựa Mông Cổ",
+   "chu": 547,
+   "A": 547,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 16,
+   "ten": "Hồi 16 — Đầu thần chưa rơi xuống đất",
+   "chu": 404,
+   "A": 404,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 17,
+   "ten": "Hồi 17 — Kháng chiến và phản công",
+   "chu": 314,
+   "A": 314,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 18,
+   "ten": "Hồi 18 — Chiến thắng Đông Bộ Đầu",
+   "chu": 522,
+   "A": 522,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 19,
+   "ten": "Hồi 19 — Quyền lực và phép nước",
+   "chu": 290,
+   "A": 290,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 20,
+   "ten": "Hồi 20 — Người lính chặn kiệu Quốc mẫu",
+   "chu": 466,
+   "A": 466,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 21,
+   "ten": "Hồi 21 — Ngón chân và chức câu đương",
+   "chu": 334,
+   "A": 334,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 22,
+   "ten": "Hồi 22 — Viên quan tố cáo Thái sư",
+   "chu": 449,
+   "A": 449,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 23,
+   "ten": "Hồi 23 — Di sản hai mặt của Trần Thủ Độ",
+   "chu": 302,
+   "A": 302,
+   "B": 0,
+   "ngoai_truyen": 0
+  },
+  {
+   "hoi": 24,
+   "ten": "Hồi 24 — Lời kết và mời tranh luận",
+   "chu": 75,
+   "A": 38,
+   "B": 0,
+   "ngoai_truyen": 0
+  }
+ ],
+ "doan": [
+  {
+   "tuyen": "A",
+   "start": 0,
+   "len": 169,
+   "mo_dau": "Một người góp phần chấm dứt hơn hai trăm năm cơ nghiệp nhà Lý"
+  },
+  {
+   "tuyen": "C",
+   "start": 169,
+   "len": 12,
+   "mo_dau": "Chào mừng quý bạn và các vị đến với Bản tin 247!"
+  },
+  {
+   "tuyen": "A",
+   "start": 181,
+   "len": 154,
+   "mo_dau": "Các bác ạ, chuyện đáng nói không chỉ là ai được ngai vàng"
+  },
+  {
+   "tuyen": "A",
+   "start": 335,
+   "len": 367,
+   "mo_dau": "Nhưng các bác ạ, trước khi Trần Thủ Độ trở thành người định đoạt ngai vàng"
+  },
+  {
+   "tuyen": "A",
+   "start": 702,
+   "len": 499,
+   "mo_dau": "Các bác thử tưởng tượng, một triều đại đang ngồi trên ngai vàng hơn hai trăm năm"
+  },
+  {
+   "tuyen": "A",
+   "start": 1201,
+   "len": 747,
+   "mo_dau": "Nhưng các bác ạ, đưa được người của mình lên ngai vàng đã khó"
+  },
+  {
+   "tuyen": "A",
+   "start": 1948,
+   "len": 518,
+   "mo_dau": "Các bác ạ, đang lúc họ Trần từng bước nắm quyền thì năm 1223"
+  },
+  {
+   "tuyen": "A",
+   "start": 2466,
+   "len": 336,
+   "mo_dau": "Các bác thử nghĩ xem, khi ngai vàng đã lung lay, người nắm quân đội"
+  },
+  {
+   "tuyen": "A",
+   "start": 2802,
+   "len": 389,
+   "mo_dau": "Các bác ạ, có những cuộc đổi ngôi bắt đầu bằng gươm giáo"
+  },
+  {
+   "tuyen": "A",
+   "start": 3191,
+   "len": 532,
+   "mo_dau": "Các bác ạ, trò đùa của hai đứa trẻ trong hoàng cung cuối cùng lại"
+  },
+  {
+   "tuyen": "A",
+   "start": 3723,
+   "len": 461,
+   "mo_dau": "Các bác ạ, ngai vàng đã đổi chủ, nhà Trần chính thức ra đời."
+  },
+  {
+   "tuyen": "A",
+   "start": 4184,
+   "len": 280,
+   "mo_dau": "Các bác ạ, bi kịch của Lý Huệ Tông vừa khép lại thì Trần Thủ Độ"
+  },
+  {
+   "tuyen": "A",
+   "start": 4464,
+   "len": 449,
+   "mo_dau": "Các bác ạ, giành được ngai vàng đã khó, giữ được ngai vàng còn khó hơn."
+  },
+  {
+   "tuyen": "A",
+   "start": 4913,
+   "len": 497,
+   "mo_dau": "Các bác ạ, dẹp được các thế lực cát cứ bên ngoài, tưởng nhà Trần"
+  },
+  {
+   "tuyen": "A",
+   "start": 5410,
+   "len": 439,
+   "mo_dau": "Các bác ạ, thiên hạ tranh ngai vàng đến đầu rơi máu chảy"
+  },
+  {
+   "tuyen": "A",
+   "start": 5849,
+   "len": 374,
+   "mo_dau": "Các bác ạ, Trần Thái Tông vừa được đưa về kinh thành thì"
+  },
+  {
+   "tuyen": "A",
+   "start": 6223,
+   "len": 547,
+   "mo_dau": "Các bác ạ, sau bao nhiêu sóng gió, nhà Trần cuối cùng cũng"
+  },
+  {
+   "tuyen": "A",
+   "start": 6770,
+   "len": 404,
+   "mo_dau": "Các bác ạ, giữa lúc vó ngựa Mông Cổ đang tiến xuống Đại Việt"
+  },
+  {
+   "tuyen": "A",
+   "start": 7174,
+   "len": 314,
+   "mo_dau": "Các bác ạ, nói được câu “Đầu thần chưa rơi xuống đất” là một chuyện"
+  },
+  {
+   "tuyen": "A",
+   "start": 7488,
+   "len": 522,
+   "mo_dau": "Các bác ạ, quân Mông Cổ tiến vào Thăng Long tưởng đã nắm chắc phần thắng."
+  },
+  {
+   "tuyen": "A",
+   "start": 8010,
+   "len": 290,
+   "mo_dau": "Các bác ạ, đánh thắng quân Mông Cổ là chuyện lớn, nhưng giữ phép nước"
+  },
+  {
+   "tuyen": "A",
+   "start": 8300,
+   "len": 466,
+   "mo_dau": "Các bác ạ, một người từng khiến cả hoàng tộc phải nhượng bộ"
+  },
+  {
+   "tuyen": "A",
+   "start": 8766,
+   "len": 334,
+   "mo_dau": "Các bác ạ, vừa rồi Trần Thủ Độ thưởng cho anh lính dám chặn kiệu vợ mình."
+  },
+  {
+   "tuyen": "A",
+   "start": 9100,
+   "len": 449,
+   "mo_dau": "Các bác ạ, xin chức nhờ người nhà đã bị Trần Thủ Độ dọa chặt ngón chân."
+  },
+  {
+   "tuyen": "A",
+   "start": 9549,
+   "len": 302,
+   "mo_dau": "Năm 1264, Thái sư Trần Thủ Độ qua đời, hưởng thọ 71 tuổi"
+  },
+  {
+   "tuyen": "A",
+   "start": 9851,
+   "len": 38,
+   "mo_dau": "Một ngai vàng đổi chủ, một đất nước được giữ vững."
+  },
+  {
+   "tuyen": "C",
+   "start": 9889,
+   "len": 37,
+   "mo_dau": "Theo các bác, Trần Thủ Độ là gian thần hay công thần?"
+  }
+ ],
+ "dau_tu": {
+  "trich": "",
+  "con_so": "",
+  "bo_su": [],
+  "phat_hien": "",
+  "trung_tuyen_B": false,
+  "nhac_lai": ""
+ },
+ "khong_tim_thay": [],
+ "su_that": [
+  {
+   "trich": "Đoàn Thượng ở Hồng Châu, Nguyễn Nộm ở vùng Bắc Giang đều xây dựng lực lượng riêng, thách thức quyền lực trung ương.",
+   "ghi_chu": "Tên đúng là Nguyễn Nộn (Hồi 11 viết Nguyễn Nộn), không nhất quán."
+  },
+  {
+   "trich": "Theo câu chuyện trong bản tư liệu, khi tình hình chiến sự trở nên nguy cấp, vua Trần Thái Tông đi thuyền hỏi ý kiến một vị quan được gọi là Trần Nhật Hạo.",
+   "ghi_chu": "Toàn thư chép là Thái úy Trần Nhật Hiệu (em vua), không phải Trần Nhật Hạo."
+  },
+  {
+   "trich": "Năm 1264, Thái sư Trần Thủ Độ qua đời, hưởng thọ 71 tuổi theo cách tính tuổi truyền thống.",
+   "ghi_chu": "Thường ghi ông mất năm 1264 thọ 71 tuổi nhưng Hồi 2 nêu sinh 1194, cần thống nhất cách tính."
+  },
+  {
+   "trich": "Trần Thủ Độ cùng Trần Thị Dung đứng sau việc phế Lý Chiêu Hoàng xuống làm công chúa, đưa Thuận Thiên vào cung làm hoàng hậu của Trần Thái Tông.",
+   "ghi_chu": "Lúc đó Trần Thị Dung đã là Linh Từ Quốc mẫu; vai trò trực tiếp của bà trong việc này sử không nêu rõ."
+  }
+ ],
+ "diem_tong": 30.0
+}
